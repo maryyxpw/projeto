@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Jornada do Herói - Fluxograma</title>
+    <!-- Incluir o Mermaid.js -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fluxograma - A Jornada do Herói</h1>
+    <!-- Fluxograma da história -->
+    <div class="mermaid">
+        graph TD;
+            A[Início da história] --> B[João ouve a voz misteriosa];
+            B --> C{João parte em sua jornada};
+            C --> D[Enfrenta monstros e armadilhas];
+            D --> E{João encontra uma figura misteriosa};
+            E --> F{João aceita ajuda?};
+            F --> G[Ajuda recebida, mas com preço];
+            F --> H[João segue sozinho];
+            G --> I[João enfrenta o desafio final];
+            H --> I[João enfrenta o desafio final];
+            I --> J[João encontra o artefato];
+            J --> K[João volta para o vilarejo];
+            K --> L[Usa o artefato para salvar o vilarejo];
+            L --> M[Fim da história];
+            I --> N[João aprende a lição sobre confiar nas pessoas];
+            N --> M;
+    </div>
+</body>
+</html>
